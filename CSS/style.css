@@ -35,6 +35,7 @@ nav ul li a {
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     background-color: var(--blue);
 }
@@ -51,7 +52,6 @@ nav ul li a {
     text-align: center;
     font-size: 24px;
     padding: 15px;
-    width: 75%;
 }
 #AboutMe h2,
 #MyWork h3,
@@ -66,6 +66,8 @@ nav ul li a {
     display: flex;
     flex-direction: row;
     position: relative;
+    align-items: center;
+    justify-content: center;
     width: 24%;
     margin: 15px;
 }
@@ -89,7 +91,9 @@ nav ul li a {
 .container .project {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
     
 
 }
@@ -98,7 +102,7 @@ nav ul li a {
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--blue);
     color: var(--content);
@@ -106,6 +110,11 @@ nav ul li a {
     font-size: 22px; 
     margin-bottom: 15px;
     padding: 5px;
+    border-style: solid var(--red);
+    border-width: 1px;
+    padding: 10px;
+    flex: 0 0 300px;
+    border-radius: 15%;
 }
 h4 {
     text-align: center;
@@ -118,6 +127,8 @@ h4 {
 .project img {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     height: 300px;
     margin: 5%;
