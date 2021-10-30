@@ -1,0 +1,160 @@
+:root {
+    --red: rgb(172, 0, 0);
+    --blue: rgb(0, 46, 61);
+    --content: rgb(173, 223, 255);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--content);
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--red);   
+    border-style: inset; 
+    border-width: 30px;
+    border-color: var(--red);
+}
+h1 {
+    font-size: 500%;
+    font-weight: bold;
+    margin: 0 25px;
+}
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+nav ul li a {
+    color: var(--red);
+    font-size: 35px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--blue);
+}
+#Info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--content);
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    width: 75%;
+}
+#AboutMe h2,
+#MyWork h3,
+#ContactMe h5
+{   text-decoration: underline;
+    color: var(--blue);
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+#profilepic {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 24%;
+    margin: 15px;
+}
+#AboutMe,
+#MyWork,
+#ContactMe
+ {  display:flex;
+    flex-shrink: 1; 
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70px;
+    margin: 5px 0;
+    background-color: var(--red);
+    color: var(--blue);   
+    border-style: inset; 
+    border-width: 15px;
+    border-color: var(--blue);
+}
+.container .project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    
+
+}
+.project {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--content);
+    text-align: center;
+    font-size: 22px; 
+    margin-bottom: 15px;
+    padding: 5px;
+}
+h4 {
+    text-align: center;
+    justify-content: space-between;
+    color: var(--red);
+    font-size: 24px;
+    text-decoration: underline;
+
+}
+.project img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 5%;
+}
+.ContactMe {
+    width: 66%
+}
+.ContactInfo {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--content);
+    text-align: center;
+    font-size: 22px;   
+    width: 100%;
+}
+  @media screen and (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    h1 {
+        font-size: 350%;
+    }
+    nav ul li a {
+        font-size: 125%;
+        margin: 0;
+        
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+  
+  }
+  
