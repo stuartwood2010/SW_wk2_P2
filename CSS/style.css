@@ -92,10 +92,10 @@ nav ul li a {
     border-width: 15px;
     border-color: var(--blue);
  }
-.project {
+#project {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
+    flex: 0 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -107,6 +107,9 @@ nav ul li a {
     padding: 0 0 15px 0;
     border-radius: 15%;
 }
+.project:focus {
+    
+}
 h4 {
     text-align: center;
     align-content: center;
@@ -116,11 +119,17 @@ h4 {
     text-decoration: underline;
 
 }
-.project img {
+#project img {
+    display: flex;
+    flex: 0 0;
     width: 300px;
     height: 300px;
     border-radius: 15%;
     padding: 15px;
+}
+#project img:focus {
+    height: 350px;
+    width: 350px;
 }
 .contact,
 .boxes,
@@ -132,13 +141,12 @@ h4 {
 .ContactInfo {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex: 0 0;
     justify-content: center;
     align-items: center;
     background-color: var(--blue);
     color: var(--content);
     font-size: 22px;
-    width: 33%;
     border-radius: 25%;
     margin: 15px;
 }
