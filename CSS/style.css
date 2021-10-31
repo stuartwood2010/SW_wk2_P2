@@ -107,9 +107,6 @@ nav ul li a {
     padding: 0 0 15px 0;
     border-radius: 15%;
 }
-.project:focus {
-    
-}
 h4 {
     text-align: center;
     align-content: center;
@@ -138,6 +135,9 @@ h4 {
     display:flex;
     justify-content: space-around;
 }
+.contact {
+    justify-content: space-evenly;
+}
 .ContactInfo {
     display: flex;
     flex-direction: row;
@@ -151,10 +151,10 @@ h4 {
     margin: 15px;
 }
 .footer #end {
-    display:flex;;
+    display:flex;
+    justify-content: center;
     background-color: var(--red);
     width: 25%;
-    justify-content: center;
     border-radius: 50%;
 }
 .footer a {
@@ -189,28 +189,3 @@ h4 {
     .ContactInfo {
         width: 28%;
     }
-
-  
-@media screen and (max-width:1165px) {
-    header {
-        display: block;
-        text-align: center;
-    }
-     h1 {
-        font-size: 350%;
-    }
-    nav ul li a {
-        font-size: 125%;
-        margin: 0;        
-    }
-    .contact,
-    .boxes,
-    .bio {
-        flex-wrap: wrap;    
-    }
-    #profilepic {
-        width: 500px;
-    }
-    .ContactInfo {
-        width: 28%;
-                          
